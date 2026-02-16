@@ -1,91 +1,74 @@
-import React from 'react';
-
 export default function Home() {
   return (
     <main>
-      <header className="header">
-        <div className="container header-content">
-          <a href="#" className="header-logo">Arna Ltd</a>
-          <nav className="nav-menu">
-            <a href="#expertise">Expertise</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-          </nav>
+      <nav id="nav">
+        <a href="#" className="logo">Arna<span>.</span></a>
+        <div className="nav-links">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact" className="nav-cta">Get a Quote</a>
         </div>
-      </header>
+      </nav>
 
-      <section className="hero-section">
-        <img 
-          src="https://images.unsplash.com/photo-1600585154340-be6199f7d009?q=80&w=2070&auto=format&fit=crop" 
-          alt="Luxury modern architecture"
-          className="hero-background-image"
-        />
-        <div className="hero-overlay"></div>
+      <section className="hero">
+        <div className="hero-bg"></div>
         <div className="container">
-          <p className="hero-subtitle">Prime Residential Construction</p>
-          <h1 className="hero-title text-gradient">WE BUILD<br />DISTINCTION.</h1>
-          <p className="hero-description">
-            Master-grade building services and luxury interior renovations. Arna Ltd delivers uncompromising precision for the UK's most demanding estates.
-          </p>
-          <div className="hero-actions">
-            <a href="#contact" className="btn btn-primary">Start Your Legacy</a>
-            <a href="#portfolio" className="btn btn-secondary">The Portfolio</a>
-          </div>
-        </div>
-        <div className="scroll-indicator"></div>
-      </section>
-
-      <section className="stats-section">
-        <div className="container">
-          <div className="stats-grid">
-            <div className="stat-item">
-              <h3>480+</h3>
-              <p>Completed Units</p>
-            </div>
-            <div className="stat-item">
-              <h3>22</h3>
-              <p>Years of Mastery</p>
-            </div>
-            <div className="stat-item">
-              <h3>A+</h3>
-              <p>Safety Rating</p>
-            </div>
-            <div className="stat-item">
-              <h3>14</h3>
-              <p>London Postcodes</p>
+          <div className="hero-content">
+            <div className="hero-label">London's Premium Builder</div>
+            <h1>We Build<br/><strong>Legacies.</strong></h1>
+            <p>High-performance construction and luxury renovations. Precision engineering for London's most ambitious residential projects.</p>
+            <div className="hero-buttons">
+              <a href="#contact" className="btn-primary">Start Your Build</a>
+              <a href="#portfolio" className="btn-outline">View Projects</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="expertise" className="expertise-section">
+      <div className="stats">
+        <div className="stat">
+          <div className="stat-num">15+</div>
+          <div className="stat-label">Years of Mastery</div>
+        </div>
+        <div className="stat">
+          <div className="stat-num">200+</div>
+          <div className="stat-label">Projects Delivered</div>
+        </div>
+        <div className="stat">
+          <div className="stat-num">100%</div>
+          <div className="stat-label">Safety Record</div>
+        </div>
+        <div className="stat">
+          <div className="stat-num">UK</div>
+          <div className="stat-label">Wide Coverage</div>
+        </div>
+      </div>
+
+      <section className="services-section" id="services">
         <div className="container">
-          <div className="expertise-header">
-            <p className="expertise-subtitle">Our Expertise</p>
-            <h2 className="expertise-title">Mastering the <span>Art of Building.</span></h2>
-          </div>
-          <div className="expertise-grid">
-            <div className="expertise-card">
-              <div className="expertise-card-icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20h20"/><path d="M7 32v-5"/><path d="M11 32v-7"/><path d="M15 32v-11"/><path d="M11 3l9 9-9 9-9-9 9-9z"/></svg>
-              </div>
-              <h3>Luxury Extensions</h3>
-              <p>Seamless architectural integration that expands your living footprint without compromise.</p>
+          <div className="section-label">What We Do</div>
+          <div className="section-title">Craftsmanship at<br/><strong>every scale.</strong></div>
+          <div className="section-desc">From single-room extensions to full structural rebuilds, we bring architectural precision to every project.</div>
+          
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-num">01</div>
+              <div className="service-name">Luxury Extensions</div>
+              <div className="service-desc">Expanding your living space with architectural precision and high-end finishes. Seamless integration with your existing structure.</div>
+              <div className="service-arrow">→</div>
             </div>
-            <div className="expertise-card">
-              <div className="expertise-card-icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
-              </div>
-              <h3>Prestige Renovations</h3>
-              <p>Total transformation of heritage and modern estates using world-class materials and techniques.</p>
+            <div className="service-card">
+              <div className="service-num">02</div>
+              <div className="service-name">Full Renovations</div>
+              <div className="service-desc">Stripping back to the foundation and rebuilding your vision from the ground up. Complete transformation, zero compromise.</div>
+              <div className="service-arrow">→</div>
             </div>
-            <div className="expertise-card">
-              <div className="expertise-card-icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="m12 8 8 8"/><path d="m12 16 8-8"/><path d="M7 12h10"/><path d="M12 7v10"/></svg>
-              </div>
-              <h3>Bespoke New Builds</h3>
-              <p>Ground-up execution of unique architectural visions, delivered with surgical precision.</p>
+            <div className="service-card">
+              <div className="service-num">03</div>
+              <div className="service-name">New Builds</div>
+              <div className="service-desc">Bespoke residential construction designed for modern living and longevity. From planning to handover, we manage everything.</div>
+              <div className="service-arrow">→</div>
             </div>
           </div>
         </div>
@@ -93,64 +76,56 @@ export default function Home() {
 
       <section id="portfolio" className="portfolio-section">
         <div className="container">
-          <div className="portfolio-header">
-            <p className="portfolio-subtitle">Portfolio</p>
-            <h2 className="portfolio-title">Selected Works.</h2>
-          </div>
-          <div className="portfolio-grid">
-            {[
-              { name: "Chelsea Penthouse", type: "Interior Renovation", img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" },
-              { name: "Surrey Estate", type: "New Build", img: "https://images.unsplash.com/photo-1613575917826-b816223297a7?q=80&w=2070&auto=format&fit=crop" },
-              { name: "Mayfair Flat", type: "Refurbishment", img: "https://images.unsplash.com/photo-1595180025983-a7f4e912f20f?q=80&w=2070&auto=format&fit=crop" }
-            ].map((item, i) => (
-              <div key={i} className="portfolio-item">
-                <img src={item.img} alt={item.name} />
-                <div className="portfolio-overlay">
-                  <p className="portfolio-type">{item.type}</p>
-                  <h3 className="portfolio-name">{item.name}</h3>
-                </div>
+          <div className="section-label">Our Work</div>
+          <div className="section-title">Built to<br/><strong>inspire.</strong></div>
+          <div className="section-desc">A selection of recent projects across London and the UK.</div>
+        </div>
+        <div className="portfolio-grid">
+          {[
+            { name: "Richmond Residence", type: "New Build", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
+            { name: "Chelsea Townhouse", type: "Renovation", img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
+            { name: "Kensington Kitchen", type: "Extension", img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" },
+            { name: "Hampstead Bath Suite", type: "Renovation", img: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&q=80" },
+            { name: "Wimbledon Villa", type: "New Build", img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" },
+            { name: "Fulham Living Space", type: "Extension", img: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80" }
+          ].map((item, i) => (
+            <div key={i} className="portfolio-item">
+              <img src={item.img} alt={item.name} loading="lazy" />
+              <div className="portfolio-overlay">
+                <span className="portfolio-type">{item.type}</span>
+                <span className="portfolio-name">{item.name}</span>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section id="testimonials" className="testimonials-section">
+      <section className="testimonials-section" id="testimonials">
         <div className="container">
-          <div className="testimonials-header">
-            <p className="testimonials-subtitle">Testimonials</p>
-            <h2 className="testimonials-title">What Our Clients Say.</h2>
-          </div>
+          <div className="section-label">Client Reviews</div>
+          <div className="section-title" style={{color: '#fff'}}>Trusted by London's<br/><strong>homeowners.</strong></div>
+          <div className="section-desc">Every project is a relationship. Here's what our clients say.</div>
+          
           <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <p className="testimonial-stars">★★★★★</p>
-              <p className="testimonial-text">"Arna Ltd delivered our extension with absolute precision. The attention to detail is unmatched in London."</p>
-              <p className="testimonial-author">James Richardson</p>
-              <p className="testimonial-location">Chelsea, London</p>
+            <div className="testimonial">
+              <div className="stars">★★★★★</div>
+              <div className="testimonial-text">Arna transformed our 1960s semi into something extraordinary. The attention to detail was remarkable — they treated our home like it was their own.</div>
+              <div className="testimonial-author">James & Sarah M.</div>
+              <div className="testimonial-location">Kensington, London</div>
             </div>
-            <div className="testimonial-card">
-              <p className="testimonial-stars">★★★★★</p>
-              <p className="testimonial-text">"The most professional building team we've ever worked with. They managed the entire process flawlessly."</p>
-              <p className="testimonial-author">Sarah Sterling</p>
-              <p className="testimonial-location">Surrey</p>
+            <div className="testimonial">
+              <div className="stars">★★★★★</div>
+              <div className="testimonial-text">Three quotes, three builders. Arna was the only one who actually listened to what we wanted. Finished on time, on budget. Can't ask for more.</div>
+              <div className="testimonial-author">David R.</div>
+              <div className="testimonial-location">Richmond, Surrey</div>
             </div>
-            <div className="testimonial-card">
-              <p className="testimonial-stars">★★★★★</p>
-              <p className="testimonial-text">"Master-grade materials and a team that genuinely cares about the final finish. Truly exceptional."</p>
-              <p className="testimonial-author">David Kensington</p>
-              <p className="testimonial-location">Richmond</p>
+            <div className="testimonial">
+              <div className="stars">★★★★★</div>
+              <div className="testimonial-text">Our neighbours keep asking who did our extension. The craftsmanship speaks for itself. We've already recommended Arna to three families on our street.</div>
+              <div className="testimonial-author">Priya & Anil K.</div>
+              <div className="testimonial-location">Hampstead, London</div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="cta-section">
-        <div className="container">
-          <h2 className="cta-title">Ready to Elevate Your Postcode?</h2>
-          <p className="cta-description">
-            Contact Arna Ltd today for a confidential project consultation and let's build your legacy.
-          </p>
-          <a href="#contact" className="btn btn-primary">Inquire Now</a>
         </div>
       </section>
 
@@ -158,31 +133,35 @@ export default function Home() {
         <div className="container">
           <div className="contact-grid">
             <div className="contact-info">
-              <p className="contact-subtitle">Contact</p>
-              <h2 className="contact-title">Start Your Legacy.</h2>
-              <p className="contact-description">Ready to elevate your postcode? Contact us for a confidential project consultation.</p>
-              <p><strong>Email:</strong> <a href="mailto:office@arna-ltd.co.uk">office@arna-ltd.co.uk</a></p>
-              <p><strong>Phone:</strong> +44 20 7946 0000</p>
+              <div className="section-label">Contact</div>
+              <div className="section-title">Start Your<br/><strong>Legacy.</strong></div>
+              <p className="section-desc">Ready to elevate your postcode? Contact us for a confidential project consultation.</p>
+              <div style={{marginTop: '40px'}}>
+                <p style={{marginBottom: '10px'}}><strong>Email:</strong> <a href="mailto:office@arna-ltd.co.uk" style={{color: '#fff', textDecoration: 'none'}}>office@arna-ltd.co.uk</a></p>
+                <p><strong>Phone:</strong> +44 20 7946 0000</p>
+              </div>
             </div>
             <form className="contact-form">
               <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <textarea placeholder="Tell us about your project"></textarea>
-              <button type="submit" className="btn btn-primary">Send Inquiry</button>
+              <input type="email" placeholder="Email Address" />
+              <textarea placeholder="How can we help with your project?"></textarea>
+              <button type="submit" className="btn-primary" style={{border: 'none', cursor: 'pointer'}}>Send Inquiry</button>
             </form>
           </div>
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="container footer-content">
-          <a href="#" className="footer-logo">Arna Ltd</a>
-          <div className="footer-links">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#">Privacy Policy</a>
+      <footer>
+        <div className="container">
+          <div className="footer-wrap">
+            <a href="#" className="logo">Arna<span>.</span></a>
+            <div className="footer-links">
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div style={{fontSize: '0.7rem', color: 'var(--color-muted)'}}>© 2026 Arna Ltd. Master Builders UK.</div>
           </div>
-          <p className="footer-copyright">© 2026 Arna Ltd. Master Builders UK.</p>
         </div>
       </footer>
     </main>
