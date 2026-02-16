@@ -30,24 +30,24 @@ export default function Home() {
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6199f7d009?q=80&w=2070" 
             alt="Luxury modern architecture"
-            className="w-full h-full object-cover scale-110 animate-[subtle-zoom_20s_infinite_alternate]"
+            className="w-full h-full object-cover scale-105"
           />
         </div>
 
-        <div className="relative z-20 text-center max-w-5xl px-6">
-          <div className="flex items-center justify-center gap-4 mb-8 opacity-0 animate-[fade-up_0.8s_ease-out_forwards]">
+        <div className="relative z-20 text-center max-w-5xl px-6 space-y-8">
+          <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-12 bg-orange-500/50" />
             <span className="text-orange-500 font-bold tracking-[0.5em] uppercase text-[10px]">Prime Residential Construction</span>
             <div className="h-[1px] w-12 bg-orange-500/50" />
           </div>
-          <h1 className="text-6xl md:text-9xl font-black tracking-tighter leading-[0.85] mb-10 opacity-0 animate-[fade-up_1s_ease-out_0.2s_forwards]">
+          <h1 className="text-6xl md:text-9xl font-black tracking-tighter leading-[0.85]">
             WE BUILD <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 via-zinc-400 to-zinc-600">DISTINCTION.</span>
           </h1>
-          <p className="text-lg md:text-xl text-zinc-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed opacity-0 animate-[fade-up_1s_ease-out_0.4s_forwards]">
+          <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
             Master-grade building services and luxury interior renovations. Arna Ltd delivers uncompromising precision for the UK's most demanding estates.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center opacity-0 animate-[fade-up_1s_ease-out_0.6s_forwards]">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-orange-600 text-white px-12 py-5 rounded-none font-bold uppercase tracking-[0.2em] text-xs hover:bg-orange-700 transition-all hover:shadow-[0_0_40px_rgba(234,88,12,0.3)] group">
               Start Your Legacy
               <span className="ml-3 inline-block transition-transform group-hover:translate-x-1">→</span>
@@ -152,17 +152,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
-      <style jsx global>{`
-        @keyframes subtle-zoom {
-          from { transform: scale(1); }
-          to { transform: scale(1.1); }
-        }
-        @keyframes fade-up {
-          from { opacity: 0; transform: translateY(40px); filter: blur(10px); }
-          to { opacity: 1; transform: translateY(0); filter: blur(0); }
-        }
-      `}</style>
     </main>
   );
 }
