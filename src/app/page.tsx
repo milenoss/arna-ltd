@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main style={{ backgroundColor: '#0a0a0a', minHeight: '100vh' }}>
       <nav id="nav">
         <a href="#" className="logo">Arna<span>.</span></a>
         <div className="nav-links">
