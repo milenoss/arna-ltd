@@ -1,76 +1,106 @@
+import React from 'react';
+
 export default function Home() {
   return (
     <main>
-      <nav>
-        <div className="logo italic uppercase tracking-tighter">Arna Ltd</div>
-        <div className="nav-links">
-          <a href="#expertise">Expertise</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
+      <header className="header">
+        <div className="container header-content">
+          <a href="#" className="header-logo">Arna Ltd</a>
+          <nav className="nav-menu">
+            <a href="#expertise">Expertise</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
-      </nav>
+      </header>
 
-      <section className="hero">
+      <section className="hero-section">
         <img 
-          src="https://images.unsplash.com/photo-1600585154340-be6199f7d009?q=80&w=2070" 
-          alt="Luxury Architecture" 
-          className="hero-img"
+          src="https://images.unsplash.com/photo-1600585154340-be6199f7d009?q=80&w=2070&auto=format&fit=crop" 
+          alt="Luxury modern architecture"
+          className="hero-background-image"
         />
+        <div className="hero-overlay"></div>
         <div className="container">
-          <div className="hero-content">
-            <span className="section-label">Prime Residential</span>
-            <h1 className="hero-title">WE BUILD<br/>DISTINCTION.</h1>
-            <div className="flex gap-4">
-              <a href="#contact" className="cta-btn">Start Project</a>
+          <p className="hero-subtitle">Prime Residential Construction</p>
+          <h1 className="hero-title text-gradient">WE BUILD<br />DISTINCTION.</h1>
+          <p className="hero-description">
+            Master-grade building services and luxury interior renovations. Arna Ltd delivers uncompromising precision for the UK's most demanding estates.
+          </p>
+          <div className="hero-actions">
+            <a href="#contact" className="btn btn-primary">Start Your Legacy</a>
+            <a href="#portfolio" className="btn btn-secondary">The Portfolio</a>
+          </div>
+        </div>
+        <div className="scroll-indicator"></div>
+      </section>
+
+      <section className="stats-section">
+        <div className="container">
+          <div className="stats-grid">
+            <div className="stat-item">
+              <h3>480+</h3>
+              <p>Completed Units</p>
+            </div>
+            <div className="stat-item">
+              <h3>22</h3>
+              <p>Years of Mastery</p>
+            </div>
+            <div className="stat-item">
+              <h3>A+</h3>
+              <p>Safety Rating</p>
+            </div>
+            <div className="stat-item">
+              <h3>14</h3>
+              <p>London Postcodes</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="expertise" className="services-section">
+      <section id="expertise" className="expertise-section">
         <div className="container">
-          <span className="section-label">Our Expertise</span>
-          <h2 className="section-title">Mastering the<br/>Art of Building.</h2>
-          <p className="section-desc">Uncompromising precision for the UK's most demanding estates.</p>
-          
-          <div className="services-grid">
-            <div className="service-card">
-              <div className="service-num">01</div>
-              <h3 className="service-name">Luxury Extensions</h3>
-              <p className="service-desc">Architectural integration that expands your living footprint without compromise.</p>
-              <div className="service-arrow">→</div>
+          <div className="expertise-header">
+            <p className="expertise-subtitle">Our Expertise</p>
+            <h2 className="expertise-title">Mastering the <span>Art of Building.</span></h2>
+          </div>
+          <div className="expertise-grid">
+            <div className="expertise-card">
+              <div className="expertise-card-icon">🏗️</div>
+              <h3>Luxury Extensions</h3>
+              <p>Seamless architectural integration that expands your living footprint without compromise.</p>
             </div>
-            <div className="service-card">
-              <div className="service-num">02</div>
-              <h3 className="service-name">Prestige Renovations</h3>
-              <p className="service-desc">Transformation of heritage estates using world-class materials and techniques.</p>
-              <div className="service-arrow">→</div>
+            <div className="expertise-card">
+              <div className="expertise-card-icon">✨</div>
+              <h3>Prestige Renovations</h3>
+              <p>Total transformation of heritage and modern estates using world-class materials and techniques.</p>
             </div>
-            <div className="service-card">
-              <div className="service-num">03</div>
-              <h3 className="service-name">Bespoke New Builds</h3>
-              <p className="service-desc">Ground-up execution of unique visions, delivered with surgical precision.</p>
-              <div className="service-arrow">→</div>
+            <div className="expertise-card">
+              <div className="expertise-card-icon">📐</div>
+              <h3>Bespoke New Builds</h3>
+              <p>Ground-up execution of unique architectural visions, delivered with surgical precision.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="portfolio">
+      <section id="portfolio" className="portfolio-section">
         <div className="container">
-          <span className="section-label">Portfolio</span>
-          <h2 className="section-title">Selected Works</h2>
+          <div className="portfolio-header">
+            <p className="portfolio-subtitle">Portfolio</p>
+            <h2 className="portfolio-title">Selected Works.</h2>
+          </div>
           <div className="portfolio-grid">
             {[
-              { name: "Chelsea Penthouse", type: "Interior Renovation", img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070" },
-              { name: "Surrey Estate", type: "New Build", img: "https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?q=80&w=2070" },
-              { name: "Mayfair Flat", type: "Refurbishment", img: "https://images.unsplash.com/photo-1600585154526-990dcea4db0d?q=80&w=2070" }
+              { name: "Chelsea Penthouse", type: "Interior Renovation", img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" },
+              { name: "Surrey Estate", type: "New Build", img: "https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?q=80&w=2070&auto=format&fit=crop" },
+              { name: "Mayfair Flat", type: "Refurbishment", img: "https://images.unsplash.com/photo-1600585154526-990dcea4db0d?q=80&w=2070&auto=format&fit=crop" }
             ].map((item, i) => (
               <div key={i} className="portfolio-item">
                 <img src={item.img} alt={item.name} />
                 <div className="portfolio-overlay">
-                  <span className="portfolio-type">{item.type}</span>
+                  <p className="portfolio-type">{item.type}</p>
                   <h3 className="portfolio-name">{item.name}</h3>
                 </div>
               </div>
@@ -81,38 +111,50 @@ export default function Home() {
 
       <section id="testimonials" className="testimonials-section">
         <div className="container">
-          <span className="section-label">Testimonials</span>
-          <h2 className="section-title">What Our<br/>Clients Say.</h2>
+          <div className="testimonials-header">
+            <p className="testimonials-subtitle">Testimonials</p>
+            <h2 className="testimonials-title">What Our Clients Say.</h2>
+          </div>
           <div className="testimonials-grid">
-            <div className="testimonial">
-              <div className="stars">★★★★★</div>
+            <div className="testimonial-card">
+              <p className="testimonial-stars">★★★★★</p>
               <p className="testimonial-text">"Arna Ltd delivered our extension with absolute precision. The attention to detail is unmatched in London."</p>
-              <div className="testimonial-author">James Richardson</div>
-              <div className="testimonial-location">Chelsea, London</div>
+              <p className="testimonial-author">James Richardson</p>
+              <p className="testimonial-location">Chelsea, London</p>
             </div>
-            <div className="testimonial">
-              <div className="stars">★★★★★</div>
+            <div className="testimonial-card">
+              <p className="testimonial-stars">★★★★★</p>
               <p className="testimonial-text">"The most professional building team we've ever worked with. They managed the entire process flawlessly."</p>
-              <div className="testimonial-author">Sarah Sterling</div>
-              <div className="testimonial-location">Surrey</div>
+              <p className="testimonial-author">Sarah Sterling</p>
+              <p className="testimonial-location">Surrey</p>
             </div>
-            <div className="testimonial">
-              <div className="stars">★★★★★</div>
+            <div className="testimonial-card">
+              <p className="testimonial-stars">★★★★★</p>
               <p className="testimonial-text">"Master-grade materials and a team that genuinely cares about the final finish. Truly exceptional."</p>
-              <div className="testimonial-author">David Kensington</div>
-              <div className="testimonial-location">Richmond</div>
+              <p className="testimonial-author">David Kensington</p>
+              <p className="testimonial-location">Richmond</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact">
+      <section className="cta-section">
+        <div className="container">
+          <h2 className="cta-title">Ready to Elevate Your Postcode?</h2>
+          <p className="cta-description">
+            Contact Arna Ltd today for a confidential project consultation and let's build your legacy.
+          </p>
+          <a href="#contact" className="btn btn-primary">Inquire Now</a>
+        </div>
+      </section>
+
+      <section id="contact" className="contact-section">
         <div className="container">
           <div className="contact-grid">
             <div className="contact-info">
-              <span className="section-label">Contact</span>
-              <h2 className="section-title">Start Your<br/>Legacy.</h2>
-              <p>Ready to elevate your postcode? Contact us for a confidential project consultation.</p>
+              <p className="contact-subtitle">Contact</p>
+              <h2 className="contact-title">Start Your Legacy.</h2>
+              <p className="contact-description">Ready to elevate your postcode? Contact us for a confidential project consultation.</p>
               <p><strong>Email:</strong> <a href="mailto:office@arna-ltd.co.uk">office@arna-ltd.co.uk</a></p>
               <p><strong>Phone:</strong> +44 20 7946 0000</p>
             </div>
@@ -120,20 +162,22 @@ export default function Home() {
               <input type="text" placeholder="Name" />
               <input type="email" placeholder="Email" />
               <textarea placeholder="Tell us about your project"></textarea>
-              <button type="submit" className="submit-btn">Send Inquiry</button>
+              <button type="submit" className="btn btn-primary">Send Inquiry</button>
             </form>
           </div>
         </div>
       </section>
 
-      <footer>
-        <div className="logo italic">Arna Ltd</div>
-        <div className="footer-links">
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Privacy Policy</a>
+      <footer className="footer">
+        <div className="container footer-content">
+          <a href="#" className="footer-logo">Arna Ltd</a>
+          <div className="footer-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <p className="footer-copyright">© 2026 Arna Ltd. Master Builders UK.</p>
         </div>
-        <div>© 2026 Arna Ltd. Master Builders UK.</div>
       </footer>
     </main>
   );
