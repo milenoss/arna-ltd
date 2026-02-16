@@ -67,17 +67,23 @@ export default function Home() {
           </div>
           <div className="expertise-grid">
             <div className="expertise-card">
-              <div className="expertise-card-icon">🏗️</div>
+              <div className="expertise-card-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20h20"/><path d="M7 32v-5"/><path d="M11 32v-7"/><path d="M15 32v-11"/><path d="M11 3l9 9-9 9-9-9 9-9z"/></svg>
+              </div>
               <h3>Luxury Extensions</h3>
               <p>Seamless architectural integration that expands your living footprint without compromise.</p>
             </div>
             <div className="expertise-card">
-              <div className="expertise-card-icon">✨</div>
+              <div className="expertise-card-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+              </div>
               <h3>Prestige Renovations</h3>
               <p>Total transformation of heritage and modern estates using world-class materials and techniques.</p>
             </div>
             <div className="expertise-card">
-              <div className="expertise-card-icon">📐</div>
+              <div className="expertise-card-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="m12 8 8 8"/><path d="m12 16 8-8"/><path d="M7 12h10"/><path d="M12 7v10"/></svg>
+              </div>
               <h3>Bespoke New Builds</h3>
               <p>Ground-up execution of unique architectural visions, delivered with surgical precision.</p>
             </div>
@@ -94,8 +100,8 @@ export default function Home() {
           <div className="portfolio-grid">
             {[
               { name: "Chelsea Penthouse", type: "Interior Renovation", img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" },
-              { name: "Surrey Estate", type: "New Build", img: "https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?q=80&w=2070&auto=format&fit=crop" },
-              { name: "Mayfair Flat", type: "Refurbishment", img: "https://images.unsplash.com/photo-1600585154526-990dcea4db0d?q=80&w=2070&auto=format&fit=crop" }
+              { name: "Surrey Estate", type: "New Build", img: "https://images.unsplash.com/photo-1613575917826-b816223297a7?q=80&w=2070&auto=format&fit=crop" },
+              { name: "Mayfair Flat", type: "Refurbishment", img: "https://images.unsplash.com/photo-1595180025983-a7f4e912f20f?q=80&w=2070&auto=format&fit=crop" }
             ].map((item, i) => (
               <div key={i} className="portfolio-item">
                 <img src={item.img} alt={item.name} />
